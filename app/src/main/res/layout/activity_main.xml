@@ -93,14 +93,14 @@
                 android:fontFamily="@font/poppins_medium"
                 android:text="Student ID"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/etStudentId"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/etStudentId"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
@@ -108,7 +108,7 @@
                 android:ems="10"
                 android:fontFamily="@font/poppins_medium"
                 android:hint="Enter your student id"
-                android:inputType="textEmailAddress"
+                android:inputType="text"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:textSize="16sp"
@@ -123,23 +123,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Password"
+                android:text="Email"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+                app:layout_constraintBottom_toTopOf="@+id/etEmail"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+                app:layout_constraintTop_toBottomOf="@+id/etStudentId" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/etEmail"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/outline_border"
                 android:ems="10"
-                android:hint="Enter your Password"
-                android:inputType="textPassword"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Enter your STI Email"
+                android:inputType="textEmailAddress"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:textSize="16sp"
@@ -156,17 +157,17 @@
                 android:fontFamily="@font/poppins_medium"
                 android:text="Forgot Password?"
                 android:textColor="#003B95"
-                app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+                app:layout_constraintBottom_toTopOf="@+id/btnContinue"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonLogin"
+                android:id="@+id/btnContinue"
                 android:layout_width="0dp"
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="LOG IN"
+                android:text="CONTINUE"
                 android:textSize="16sp"
                 app:backgroundTint="#003B95"
                 app:cornerRadius="12dp"
@@ -187,7 +188,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+                app:layout_constraintTop_toBottomOf="@+id/btnContinue" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
